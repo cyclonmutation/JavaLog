@@ -11,15 +11,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int[] points = new int[5];
-        points[0] = 10;
-        points[1] = 6;
-        points[2] = 15;
-        points[3] = 23;
-        points[4] = 17;
+        total(50, 1000);
+    }
 
-        for (int i = 0; i < points.length; i++) {
-            Log.d("javatest", String.valueOf(points[i]));
+    private void total(int first, int last) {
+        int sum = 0;
+        for (int i = first; i <= last; i++) {   //firstをlastまで1ずつ増量
+            sum = sum + i;  //firstから増量した値を合計
         }
+
+        Log.d("javatest", String.valueOf(sum));
     }
 }
