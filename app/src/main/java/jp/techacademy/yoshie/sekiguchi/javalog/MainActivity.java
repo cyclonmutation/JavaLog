@@ -13,20 +13,16 @@ public class MainActivity extends AppCompatActivity {
 
         int drink = 1;
 
-        switch (drink) {
-            case 0:
-                Log.d("javatest", "コーヒーを注文しました");
-                break;
-            case 1:
-                Log.d("javatest", "紅茶を注文しました");
-                break;
-            case 2:
-                Log.d("javatest", "ミルクを注文しました");
-                break;
-            default:
-                Log.d("javatest", "オーダーミスです");
-                break;
+
+        for (int i = 1; i < 6; i++) {
+            Log.d("javatest", "for文の " + String.valueOf(i) + "回目");
         }
 
+        int num = 1;
+
+        while (num < 6) {
+            Log.d("javatest", "while文の " + String.valueOf(num) + "回目");
+            num++;
+        }
     }
 }
