@@ -11,10 +11,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int drink = 1;
-
-
-        for (int i = 1; i < 6; i++) {
+         for (int i = 1; i < 6; i++) {
             Log.d("javatest", "for文の " + String.valueOf(i) + "回目");
         }
 
