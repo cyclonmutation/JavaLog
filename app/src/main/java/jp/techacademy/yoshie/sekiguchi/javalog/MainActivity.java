@@ -11,15 +11,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        total(50, 1000);
+        int t = total(100, 1000);   //totalからsumを返却しtに代入
+        Log.d("javatest", String.valueOf(t));   //tをLog出力
     }
 
-    private void total(int first, int last) {
+    private int total(int first, int last) {
         int sum = 0;
         for (int i = first; i <= last; i++) {   //firstをlastまで1ずつ増量
             sum = sum + i;  //firstから増量した値を合計
         }
 
-        Log.d("javatest", String.valueOf(sum));
+        return sum;
     }
 }
