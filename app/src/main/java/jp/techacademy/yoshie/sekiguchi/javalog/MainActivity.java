@@ -11,13 +11,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 整数型の変数をnumという名前で作成して、10を代入する
-        int num = 10;
-        Log.d("javatest", String.valueOf(num));    // num出力
+        int num1 = 10 + 5 - 2 * 4 / 2;
+        Log.d("javatest", "10 + 5 - 2 * 4 / 2 = " + String.valueOf(num1));
 
-        // numに50を代入
-        num = 50;
-        Log.d("javatest", String.valueOf(num));    // num出力
+        boolean flag1 = true;
+        boolean flag2 = false;
+        Log.d("javatest", "flag1 && flag2 = " + String.valueOf(flag1 && flag2));    // and条件
+        Log.d("javatest", "flag1 || flag2 = " + String.valueOf(flag1 || flag2));    // or条件
+
+        int num2 = 10;
+        int num3 = 20;
+        Log.d("javatest", "num2 < num3 = " + String.valueOf(num2 < num3));
 
     }
 }
