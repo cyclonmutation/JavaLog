@@ -11,17 +11,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Dog dog = new Dog("ポチ", 3);     // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+        /*
+        Human.introduce();   //Human class呼んでること確認用
+         */
 
-        dog.say();
-        Log.d("javatest", "犬の名前は" + dog.name + "です。");
-        Log.d("javatest", "犬の年齢は" + dog.age + "歳です。");
+        Human human1 = new Human("のび太", 12, "あやとり");
+        Human human2 = new Human("スネ夫", 11, "ラジコン");
+        Human human3 = new Human("タケシ", 10, "リサイタル");
 
-        BigDog bigdog = new BigDog("ヨーゼフ", 15);     // 名前をヨーゼフ、年齢15歳で、BigDogのインスタンスを作る
+        human1.say();
+        human1.think();
 
-        bigdog.say();
-        Log.d("javatest", "犬の名前は" + bigdog.name + "です。");
-        Log.d("javatest", "犬の年齢は" + bigdog.age + "歳です。");
+        human2.say();
+        human2.think();
+
+        human3.say();
+        human3.think();
+
     }
 
 }
