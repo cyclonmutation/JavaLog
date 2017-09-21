@@ -3,17 +3,25 @@ package jp.techacademy.yoshie.sekiguchi.javalog;
 import android.util.Log;
 
 class Dog {
-    // 変数
-    String name;      // 名前
+    // クラス変数
+    static String to_jp = "犬";
+
+    // メンバ変数
+    String name;  // 名前
     int age;    // 年齢
 
-    // 引数付きコンストラクタ
+    // コンストラクタ
     public Dog(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    // メソッド
+    // クラス関数
+    public static void introduce() {
+        Log.d("javatest", "これは犬クラスです。");
+    }
+
+    // メンバ関数
     public void say() {
         Log.d("javatest", this.name + "(" + this.age + "歳)" + "「ワンワン」");
     }
